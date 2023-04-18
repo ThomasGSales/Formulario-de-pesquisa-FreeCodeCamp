@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>form de pesquisa</title>
+  </head>
+  <body>
+    <h1 id="title">Formulário de Pesquisa</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+            <fieldset>    
+                <label for="name">Informe o seu nome <input type="text" placeholder="Exemplo: Thomas Gabriel" required id="name"></label>
+                <label for="email">Informe o seu nome <input type="email" placeholder="Exemplo: email@email.com" required id="email"></label>
+                <label for="number">Idade <input type="number" required max="120" min="13" placeholder="numero" id="number"></label>
+            </fieldset>
+            
+            <fieldset>
+                <label>Estado civil
+                    <select required name="dropdown" id="dropdown">
+                        <option value="">(selecione)</option>
+                        <option value="1">Solteiro(a)</option>
+                        <option value="2">Casado(a)</option>
+                        <option value="3">União estavel</option>
+                        <option value="4">Divórcio</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="trabalha">Trabalha? </label>
+                <label for="yeswork"><input type="radio" id="yeswork" class="inline" name="work"> Sim</label>
+                <label for="nowork"><input type="radio" class="inline" id="nowork" name="work"> Não</label>
+            </fieldset>
+
+            <fieldset>
+                <Label>O que gostaria de melhorar?</Label>
+                <label for="front-end-project"><input class="inline" value="front" type="checkbox" id="front-end-project"> Front-End projects</label>
+                <label for="back-end-project"><input class="inline" value="back" type="checkbox" id="back-end-project"> Back-End projects</label>
+                <label for="videos"><input value="vid" class="inline" type="checkbox" id="videos"> Videos</label>
+                <label for="wiki"><input value="wik" class="inline" type="checkbox" id="wiki"> Wiki</label>
+                <label for="forum"><input value="foru" class="inline" type="checkbox" id="forum"> Forum</label>
+            </fieldset>
+            
+            <fieldset>
+                <label for="comentarios-adicionais">Comentários adicionais: <textarea name="Comentários" id="comentarios-adicionais" cols="60" rows="5"></textarea></label>
+            
+            </fieldset>
+                <input type="submit" id="submit" value="Enviar">
+            
+    </form>
+  </body>
+</html>
